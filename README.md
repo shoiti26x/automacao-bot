@@ -2,8 +2,6 @@
 
 Bot em **Python** que cadastra produtos automaticamente em um sistema web. Ele lê uma planilha de produtos e controla o mouse e o teclado do computador para preencher o formulário do site, item por item, sem digitação manual.
 
-> Projeto desenvolvido durante o **Intensivão de Python da Hashtag Treinamentos**, usando o site de testes do curso como sistema de cadastro.
-
 ---
 
 ## 📌 O problema
