@@ -3,6 +3,10 @@ import time
 pyautogui.PAUSE = 0.5
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
 
+# dados de login do site de teste (troque pelos seus)
+EMAIL = "seu-email@exemplo.com"
+SENHA = "sua-senha"
+
 # passo 1: entrar no sistema da empresa
 # abrir o navegador
 pyautogui.press("win")
@@ -20,9 +24,9 @@ time.sleep(3)
 
 # passo 2: fazer login
 pyautogui.press("tab")
-pyautogui.write("desenvolvendoplataforma.com")
+pyautogui.write(EMAIL)
 pyautogui.press("tab") #passar para o botao
-pyautogui.write("dragonquestrun171")
+pyautogui.write(SENHA)
 pyautogui.press("tab") #passar para o botao
 pyautogui.press("enter")
 
