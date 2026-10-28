@@ -1,6 +1,6 @@
 import pyautogui
 import time
-pyautogui.PAUSE = 0.5
+pyautogui.PAUSE = 0.15  # pausa entre cada acao (menor = mais rapido)
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
 
 # dados de login do site de teste (troque pelos seus)
