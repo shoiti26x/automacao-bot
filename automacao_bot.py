@@ -10,7 +10,7 @@ SENHA = "sua-senha"
 # passo 1: entrar no sistema da empresa
 # abrir o navegador
 pyautogui.press("win")
-pyautogui.write("firefox")
+pyautogui.write("edge")
 pyautogui.press("enter")
 
 time.sleep(2)

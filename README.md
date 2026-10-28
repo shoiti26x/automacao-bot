@@ -83,7 +83,7 @@ Depois de iniciar, **não mexa no mouse nem no teclado** até o bot terminar, po
 
 ## ⚠️ Limitações
 
-- Feito para **Windows** com o **Firefox** (o bot abre o navegador pela tecla Windows).
+- Feito para **Windows** com o **Microsoft Edge** (o bot abre o navegador pela tecla Windows).
 - Depende da **posição dos elementos na tela**, então mudanças de resolução, zoom ou layout do site exigem ajuste.
 - Usa **tempos de espera fixos**: se o site demorar mais do que o esperado para carregar, o bot pode digitar antes da hora.
 
