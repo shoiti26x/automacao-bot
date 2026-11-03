@@ -1,11 +1,16 @@
-import pyautogui
+import os
 import time
+
+import pandas as pd
+import pyautogui
+
 pyautogui.PAUSE = 0.15  # pausa entre cada acao (menor = mais rapido)
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
 
-# dados de login do site de teste (troque pelos seus)
-EMAIL = "seu-email@exemplo.com"
-SENHA = "sua-senha"
+# dados de login lidos das variaveis de ambiente BOT_EMAIL e BOT_SENHA,
+# para a senha nao ficar escrita no codigo (se nao existirem, usa os valores de exemplo)
+EMAIL = os.environ.get("BOT_EMAIL", "seu-email@exemplo.com")
+SENHA = os.environ.get("BOT_SENHA", "sua-senha")
 
 # passo 1: entrar no sistema da empresa
 # abrir o navegador
@@ -33,7 +38,6 @@ pyautogui.press("enter")
 time.sleep(3)
 
 # Passo 3: Importar a base de produtos pra cadastrar
-import pandas as pd
 
 tabela = pd.read_csv("produtos.csv")
 

@@ -57,7 +57,14 @@ pip install pandas pyautogui
 
 **2. Ajuste o login**
 
-No início do `automacao_bot.py`, preencha as variáveis `EMAIL` e `SENHA` com os dados de acesso do site.
+O bot lê o login de duas variáveis de ambiente, para a senha não ficar escrita no código. No PowerShell, antes de rodar:
+
+```powershell
+$env:BOT_EMAIL = "seu-email@exemplo.com"
+$env:BOT_SENHA = "sua-senha"
+```
+
+Elas valem só para aquela janela do terminal. Se não forem definidas, o bot usa os valores de exemplo do código.
 
 **3. Ajuste a posição do primeiro campo (se precisar)**
 
@@ -90,5 +97,5 @@ Depois de iniciar, **não mexa no mouse nem no teclado** até o bot terminar, po
 ## 🗺️ Próximas melhorias
 
 - [ ] Trocar o PyAutoGUI por **Selenium** ou **Playwright**, que encontram os campos pelo código da página e não pela posição na tela
-- [ ] Ler o login de um arquivo `.env`, fora do código
+- [x] Ler o login de fora do código (variáveis de ambiente)
 - [ ] Gerar um relatório no final com os produtos cadastrados e os que deram erro
