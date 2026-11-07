@@ -40,6 +40,7 @@ automacao-bot/
 ├── automacao_bot.py    # o bot: abre o site, faz login e cadastra os produtos
 ├── pegar_posicao.py    # utilitário para descobrir a posição de um campo na tela
 ├── produtos.csv        # base de produtos a cadastrar
+├── requirements.txt    # bibliotecas necessárias
 └── README.md
 ```
 
@@ -52,7 +53,7 @@ A planilha `produtos.csv` tem as colunas `codigo`, `marca`, `tipo`, `categoria`,
 **1. Instale as dependências**
 
 ```bash
-pip install pandas pyautogui
+pip install -r requirements.txt
 ```
 
 **2. Ajuste o login**
