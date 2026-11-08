@@ -41,6 +41,7 @@ automacao-bot/
 ├── pegar_posicao.py    # utilitário para descobrir a posição de um campo na tela
 ├── produtos.csv        # base de produtos a cadastrar
 ├── requirements.txt    # bibliotecas necessárias
+├── .gitignore          # arquivos temporários que não vão para o GitHub
 └── README.md
 ```
 
