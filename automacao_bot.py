@@ -41,7 +41,7 @@ time.sleep(3)
 
 tabela = pd.read_csv("produtos.csv")
 
-print(tabela)
+print(f"{len(tabela)} produtos para cadastrar")
 
 # Passo 4: Cadastrar um produto
 for linha in tabela.index:
@@ -73,4 +73,7 @@ for linha in tabela.index:
     time.sleep(0.5)
     # dar scroll de tudo pra cima
     pyautogui.scroll(5000)
+    print(f"Produto {linha + 1} de {len(tabela)} cadastrado")
+
+print("Cadastro concluido!")
     # Passo 5: Repetir o processo de cadastro até o fim
