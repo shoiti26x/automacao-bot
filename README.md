@@ -92,6 +92,19 @@ Enquanto roda, o terminal mostra o progresso (`Produto 1 de 292 cadastrado`...) 
 
 ---
 
+## ⚙️ Ajustando a velocidade
+
+No `automacao_bot.py`, dois valores controlam o ritmo do bot:
+
+| Valor | O que faz | Padrão |
+|---|---|---|
+| `pyautogui.PAUSE` | Pausa depois de cada ação (digitar, apertar Tab...) | `0.15` s |
+| `time.sleep(...)` depois do Enter | Tempo para o site processar cada cadastro | `0.5` s |
+
+Valores menores deixam o bot mais rápido, mas, se o site não acompanhar, os dados podem cair no campo errado. Se isso acontecer, aumente os valores aos poucos.
+
+---
+
 ## ⚠️ Limitações
 
 - Feito para **Windows** com o **Microsoft Edge** (o bot abre o navegador pela tecla Windows).
