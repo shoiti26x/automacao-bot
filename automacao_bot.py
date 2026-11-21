@@ -5,6 +5,11 @@ import pandas as pd
 import pyautogui
 
 pyautogui.PAUSE = 0.15  # pausa entre cada acao (menor = mais rapido)
+
+# confere se a planilha existe antes de assumir o mouse e o teclado
+if not os.path.exists("produtos.csv"):
+    print("Arquivo produtos.csv nao encontrado. Rode o bot dentro da pasta do projeto.")
+    raise SystemExit(1)
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
 
 # dados de login lidos das variaveis de ambiente BOT_EMAIL e BOT_SENHA,
