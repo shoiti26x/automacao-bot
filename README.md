@@ -105,6 +105,17 @@ Valores menores deixam o bot mais rápido, mas, se o site não acompanhar, os da
 
 ---
 
+## 🩺 Problemas comuns
+
+| Sintoma | Causa provável | Solução |
+|---|---|---|
+| Os dados caem no campo errado | A posição do clique não bate com a sua tela | Rode o `pegar_posicao.py` de novo e atualize o `pyautogui.click(...)` |
+| Pula campos ou digita antes da hora | O site está mais lento que o bot | Aumente o `pyautogui.PAUSE` ou o `time.sleep` depois do Enter |
+| "Arquivo produtos.csv nao encontrado" | O terminal está em outra pasta | Entre na pasta do projeto antes de rodar |
+| Preciso parar no meio | — | Leve o mouse até o canto superior esquerdo da tela |
+
+---
+
 ## ⚠️ Limitações
 
 - Feito para **Windows** com o **Microsoft Edge** (o bot abre o navegador pela tecla Windows).
