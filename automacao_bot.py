@@ -4,18 +4,23 @@ import time
 import pandas as pd
 import pyautogui
 
+# ---------- configuracoes ----------
 pyautogui.PAUSE = 0.15  # pausa entre cada acao (menor = mais rapido)
 
-# confere se a planilha existe antes de assumir o mouse e o teclado
-if not os.path.exists("produtos.csv"):
-    print("Arquivo produtos.csv nao encontrado. Rode o bot dentro da pasta do projeto.")
-    raise SystemExit(1)
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
 
 # dados de login lidos das variaveis de ambiente BOT_EMAIL e BOT_SENHA,
 # para a senha nao ficar escrita no codigo (se nao existirem, usa os valores de exemplo)
 EMAIL = os.environ.get("BOT_EMAIL", "seu-email@exemplo.com")
 SENHA = os.environ.get("BOT_SENHA", "sua-senha")
+
+# ---------- verificacoes antes de comecar ----------
+# confere se a planilha existe antes de assumir o mouse e o teclado
+if not os.path.exists("produtos.csv"):
+    print("Arquivo produtos.csv nao encontrado. Rode o bot dentro da pasta do projeto.")
+    raise SystemExit(1)
+
+# ---------- automacao ----------
 
 # passo 1: entrar no sistema da empresa
 # abrir o navegador
