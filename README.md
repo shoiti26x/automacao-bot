@@ -86,7 +86,7 @@ python automacao_bot.py
 
 Depois de iniciar, **não mexa no mouse nem no teclado** até o bot terminar, porque ele está usando os dois.
 
-Enquanto roda, o terminal mostra o progresso (`Produto 1 de 292 cadastrado`...) e avisa com `Cadastro concluido!` quando termina.
+Enquanto roda, o terminal mostra o progresso (`Produto 1 de 292 cadastrado`...) e, no fim, mostra quantos produtos foram cadastrados e quanto tempo levou.
 
 > 🛑 **Para interromper**, leve o mouse rapidamente até o canto superior esquerdo da tela. É uma proteção do próprio PyAutoGUI.
 

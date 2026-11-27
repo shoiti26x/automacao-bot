@@ -52,6 +52,7 @@ time.sleep(3)
 tabela = pd.read_csv("produtos.csv")
 
 print(f"{len(tabela)} produtos para cadastrar")
+inicio = time.time()  # marca o inicio para medir quanto tempo o cadastro levou
 
 # Passo 4 e 5: cadastrar cada produto, repetindo ate o fim da tabela
 for linha in tabela.index:
@@ -85,4 +86,5 @@ for linha in tabela.index:
     pyautogui.scroll(5000)
     print(f"Produto {linha + 1} de {len(tabela)} cadastrado")
 
-print("Cadastro concluido!")
+duracao = time.time() - inicio
+print(f"Cadastro concluido! {len(tabela)} produtos em {duracao / 60:.1f} minutos")
